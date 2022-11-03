@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "iam:GetAccountPasswordPolicy",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "iam:ChangePassword",
+            "Resource": "arn:aws:iam::996963532581:user/${aws:username}"
+        }
+    ]
+}
